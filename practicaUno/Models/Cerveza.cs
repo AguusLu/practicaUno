@@ -19,6 +19,7 @@ namespace practicaUno.Models
         }
 
         public int alcohol { get; set; }
+        public string marca { get; set; }
 
         public void maxRecomendado()
         {
