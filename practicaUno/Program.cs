@@ -40,27 +40,30 @@ class Program
          Cerveza cerveza = new Cerveza();
          mostrarRecomendacion(cerveza);*/
 
+        CervezaBD cervezaBD = new CervezaBD();
+
         //universo sólo existe acá
-        /*  { 
+        /*{ 
               Cerveza cerveza = new Cerveza(15, "Ipa");
               cerveza.marca = "Antares";
               cerveza.alcohol = 6;
-              cervezaBD.Add(cerveza);
-          }
+              cervezaBD.agregarCerveza(cerveza);
+        }
 
+        
           {
-              Cerveza cerveza = new Cerveza(12, "rubia");
+              Cerveza cerveza = new Cerveza(12, "roja");
               cerveza.marca = "Corona";
               cerveza.alcohol = 8;
 
               cervezaBD.Edit(cerveza, 3);
-          }*/
+          }
+        */
+           {
+               cervezaBD.Delete(1002);
+           }
 
-        /*   {
-               cervezaBD.Delete(4);
-           }*/
-
-        CervezaBD cervezaBD = new CervezaBD();
+      
 
         var cervezas = cervezaBD.getCervezas();
 
