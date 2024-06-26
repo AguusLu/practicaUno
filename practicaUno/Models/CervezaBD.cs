@@ -14,7 +14,7 @@ namespace practicaUno.Models
         /*
             Data Source= ;
             Initial Catalog= ;
-            User= ;v
+            User= ;
             Password= ;
         */
         //    "DefaultConnection": "Server=DESKTOP-4UG60OM\\SQLEXPRESS;Database=expressions;Trusted_Connection=True;MultipleActiveResultSets=True;Encrypt=False"

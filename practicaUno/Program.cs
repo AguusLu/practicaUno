@@ -1,4 +1,6 @@
 ﻿using practicaUno.Models;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 class Program
 {
@@ -58,7 +60,7 @@ class Program
 
               cervezaBD.Edit(cerveza, 3);
           }
-        */
+        
            {
                cervezaBD.Delete(1002);
            }
@@ -71,7 +73,18 @@ class Program
         {
             Console.WriteLine(c.nombre +" " + "hola");
         }
-        
+        */
+
+         /*Cerveza cerveza = new Cerveza(8, "Cerveza");
+         // "{ Cantidad: 10, Nombre:'Cerveza'; }"  //cosas:[]
+         string cervezaJson = JsonSerializer.Serialize(cerveza);
+
+         File.WriteAllText("objeto.txt", cervezaJson);
+        */
+
+         string cervezaDesJson = File.ReadAllText("objeto.txt");
+         Cerveza cerveza = JsonSerializer.Deserialize<Cerveza>(cervezaDesJson);
+
     }
 
     static void mostrarRecomendacion(IBebidaAlcoholica bebidaAlcoholica)
